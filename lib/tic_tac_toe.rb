@@ -41,5 +41,9 @@ end
 
 def current_player
   turn_count.even? ? "X" : "O"
+end
+
+def turn
+  puts "Please enter a numer (1-9):"
 
 end
