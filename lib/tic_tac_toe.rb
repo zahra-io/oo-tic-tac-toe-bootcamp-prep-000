@@ -84,7 +84,7 @@ class TicTacToe
     end
   end
 
-  def player
+  def play
     turn until over?
     puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
   end
