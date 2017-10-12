@@ -74,12 +74,18 @@ class TicTacToe
     full? && !won?
   end
 
-  def over? 
+  def over?
     won? || draw?
   end
 
   def winner
     if combo = won?
-      @board[combo[0]] 
+      @board[combo[0]]
+    end
+  end
+
+  def player
+    turn until over?
+    puts winner ? "Congratulations #{winner}!" : "Cat's Game!" 
 
 end
