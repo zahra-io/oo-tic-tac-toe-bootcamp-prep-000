@@ -65,6 +65,8 @@ class TicTacToe
       end
     end
   end
-  
+
+  def full?
+    @board.all?{|square| square != " "} 
 
 end
